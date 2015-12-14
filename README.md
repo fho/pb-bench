@@ -12,8 +12,6 @@ The application focuses on being:
 * providing staticial data about the benchmark results,
 * being simply to extend with additional benchmarks.
 
-This version of pb-bench comes only with 2 benchmarks as examples.
-To get a full-fledged benchmark suite you have to extend the benchmark suite.
 
 Quick Start
 -----------
@@ -31,6 +29,15 @@ binaries with fitting ones for your system.
 General dependencies:
 * python
 * tar
+* xz-utils
+
+Additional dependencies as Debian packages, per benchmark:
+
+|Benchmark      |Debian Package             |
+|---------------|---------------------------|
+|stream         |libgomp1                   |
+|kernel-compile |build-essential            |
+|mysql          |libdbd-mysql-perl,libaio1  |
 
 
 Configuration
